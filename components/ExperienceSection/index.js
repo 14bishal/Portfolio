@@ -10,44 +10,59 @@ import {
 import React from 'react';
 
 import {styles} from './styles';
-import {COGOPORT_SKILLS} from '../../constants/cogoport-skills';
 
-function ExperienceSection() {
-  const numColumn = Math.ceil(COGOPORT_SKILLS.length / 2);
+function ExperienceSection({
+  title = '',
+  section = '',
+  startDate = '',
+  endDate = '',
+  position = '',
+  data = [],
+  score = '',
+  showMore = false,
+}) {
+  const numColumn = Math.ceil((data || []).length / 2);
+
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
         <View style={styles.about_section}>
-          <Text style={styles.section_title}>Experience</Text>
-          <View style={styles.card}>
-            <Text style={styles.company_name}>Cogoport</Text>
-            <Text style={styles.duration}>(2022 - Present)</Text>
-            <Text style={styles.position}>
-              Associate Software Engineer - (Frontend)
-            </Text>
-            <FlatList
-              keyExtractor={item => item.name}
-              data={COGOPORT_SKILLS}
-              numColumns={numColumn}
-              showsVerticalScrollIndicator={false}
-              showsHorizontalScrollIndicator={false}
-              renderItem={({item}) => {
-                return (
-                  <View style={styles.wrapper} key={item?.name}>
-                    <Text style={styles.label}>{`\u29BF ${item.label}`}</Text>
+          <Text style={styles.section_title}>{section}</Text>
+          <View style={[styles.card, showMore ? styles.details : styles.hide]}>
+            <Text style={styles.company_name}>{title}</Text>
+            <Text style={styles.duration}>{`(${startDate} - ${endDate})`}</Text>
+            <Text style={styles.position}>{position}</Text>
+            {score ? (
+              <View>
+                <Text style={styles.label}>{`${score}`} CGPA </Text>
+              </View>
+            ) : (
+              <FlatList
+                keyExtractor={item => item.name}
+                data={data}
+                numColumns={numColumn}
+                showsVerticalScrollIndicator={false}
+                showsHorizontalScrollIndicator={false}
+                renderItem={({item}) => {
+                  return (
+                    <View style={styles.wrapper} key={item?.name}>
+                      <Text style={styles.label}>{`\u29BF ${item.label}`}</Text>
+                    </View>
+                  );
+                }}
+              />
+            )}
+            {showMore ? (
+              <View style={styles.view_section}>
+                <TouchableOpacity
+                  activeOpacity={0.4}
+                  onPress={() => console.log('hello')}>
+                  <View>
+                    <Text style={styles.button_name}>Details</Text>
                   </View>
-                );
-              }}
-            />
-            <View style={styles.view_section}>
-              <TouchableOpacity
-                activeOpacity={0.4}
-                onPress={() => console.log('hello')}>
-                <View>
-                  <Text style={styles.button_name}>Details</Text>
-                </View>
-              </TouchableOpacity>
-            </View>
+                </TouchableOpacity>
+              </View>
+            ) : null}
           </View>
         </View>
       </ScrollView>
