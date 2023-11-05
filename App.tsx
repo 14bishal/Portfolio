@@ -12,8 +12,7 @@ import {
   //   useColorScheme,
   View,
 } from 'react-native';
-import AboutSection from './components/AboutSection';
-import ExperienceSection from './components/ExperienceSection';
+import MyProfile from './components';
 
 // const isDarkMode = useColorScheme() === 'dark';
 
@@ -22,8 +21,7 @@ function App(): JSX.Element {
     <SafeAreaView>
       <ScrollView contentInsetAdjustmentBehavior="automatic">
         <View>
-          <AboutSection />
-          <ExperienceSection />
+          <MyProfile />
         </View>
       </ScrollView>
     </SafeAreaView>
