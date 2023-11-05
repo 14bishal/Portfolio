@@ -29,12 +29,19 @@ export const styles = StyleSheet.create({
 
   card: {
     width: 332,
-    height: 230,
     padding: 30,
     flex: 4,
     alignContent: 'center',
     borderRadius: 15,
     backgroundColor: '#0077FF',
+  },
+
+  details: {
+    height: 230,
+  },
+
+  hide: {
+    height: 185,
   },
 
   company_name: {
