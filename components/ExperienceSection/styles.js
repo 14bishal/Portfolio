@@ -1,86 +1,85 @@
 import {StyleSheet, Dimensions} from 'react-native';
 
 const width = Dimensions.get('screen').width;
-// const height = Dimensions.get('screen').height;
 
 export const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignContent: 'center',
-    justifyContent: 'center',
-    paddingVertical: 18,
-    width: width,
-    paddingHorizontal: 30,
-  },
+    container: {
+        flex: 1,
+        alignContent: 'center',
+        justifyContent: 'center',
+        paddingVertical: 18,
+        width: width,
+        paddingHorizontal: 30,
+    },
 
-  about_section: {
-    flex: 1,
-    alignContent: 'center',
-    justifyContent: 'center',
-  },
+    about_section: {
+        flex: 1,
+        alignContent: 'center',
+        justifyContent: 'center',
+    },
 
-  section_title: {
-    fontSize: 20,
-    fontWeight: '600',
-    color: '#000',
-    lineHeight: 24,
-    marginBottom: 14,
-  },
+    section_title: {
+        fontSize: 20,
+        fontWeight: '600',
+        color: '#000',
+        lineHeight: 24,
+        marginBottom: 14,
+    },
 
-  card: {
-    width: 332,
-    padding: 30,
-    flex: 4,
-    alignContent: 'center',
-    borderRadius: 15,
-    backgroundColor: '#0077FF',
-  },
+    card: {
+        width: 332,
+        padding: 30,
+        flex: 4,
+        alignContent: 'center',
+        borderRadius: 15,
+        backgroundColor: '#0077FF',
+    },
 
-  details: {
-    height: 230,
-  },
+    details: {
+        height: 230,
+    },
 
-  hide: {
-    height: 185,
-  },
+    hide: {
+        height: 185,
+    },
 
-  company_name: {
-    fontSize: 28,
-    color: '#fff',
-    fontWeight: '600',
-  },
+    company_name: {
+        fontSize: 28,
+        color: '#fff',
+        fontWeight: '600',
+    },
 
-  duration: {
-    fontSize: 12,
-    color: '#fff',
-  },
+    duration: {
+        fontSize: 12,
+        color: '#fff',
+    },
 
-  position: {
-    marginVertical: 8,
-    fontWeight: 'bold',
-    color: '#fff',
-  },
+    position: {
+        marginVertical: 8,
+        fontWeight: 'bold',
+        color: '#fff',
+    },
 
-  wrapper: {
-    marginRight: 4,
-    marginBottom: 4,
-    width: 90,
-  },
+    wrapper: {
+        marginRight: 4,
+        marginBottom: 4,
+        width: 90,
+    },
 
-  label: {
-    color: '#fff',
-  },
+    label: {
+        color: '#fff',
+    },
 
-  view_section: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignContent: 'center',
-    justifyContent: 'flex-end',
-  },
+    view_section: {
+        display: 'flex',
+        flexDirection: 'row',
+        alignContent: 'center',
+        justifyContent: 'flex-end',
+    },
 
-  button_name: {
-    color: '#fff',
-    fontSize: 14,
-    textDecorationLine: 'underline',
-  },
+    button_name: {
+        color: '#fff',
+        fontSize: 14,
+        textDecorationLine: 'underline',
+    },
 });
