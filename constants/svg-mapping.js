@@ -29,6 +29,24 @@ const SVG_MAPPING = [
         width: 170,
         height: 170,
     },
+    {
+        image: 'https://img.icons8.com/color/144/google-firebase-console.png',
+        key: 'firebase',
+        width: 170,
+        height: 170,
+    },
+    {
+        image: 'https://img.icons8.com/color/144/vue-js.png',
+        key: 'vue_js',
+        width: 170,
+        height: 170,
+    },
+    {
+        image: 'https://img.icons8.com/color/144/jira.png',
+        key: 'jira',
+        width: 170,
+        height: 170,
+    },
 ];
 
 export default SVG_MAPPING;
