@@ -11,23 +11,21 @@ const POPULAR_PROJECTS = [
         name: 'cogostore',
         // skills: ['ReactJs', 'Redux', 'useForm'],
         imageUrl:
-            'https://cdn.cogoport.io/cms-prod/cogo_partner/vault/original/Cogostore.png',
-        // 'https://cdn.cogoport.io/cms-prod/cogo_admin/vault/original/store.jpg',
-        // https://drive.google.com/file/d/1q0PVBC5WadvHBpsBh2d8GhQAGofMNvFl/view?usp=sharing
+            'https://imagedelivery.net/xE-VtsYZUS2Y8MtLMcbXAg/4e19b54c784a01db5da1/sm',
     },
     {
         label: 'Ticketing & Support Solution',
         name: 'ticketing',
         // skills: ['ReactJs', 'NivoCharts', 'useForm'],
         imageUrl:
-            'https://cdn.cogoport.io/cms-prod/cogo_admin/vault/original/Connection-Lost-color.png',
+            'https://imagedelivery.net/xE-VtsYZUS2Y8MtLMcbXAg/471ba592366a19737176/sm',
     },
     {
         label: 'Omnichannel - All in one solution',
         name: 'omni_channel',
         // skills: ['ReactJs', 'Redux', 'Firebase'],
         imageUrl:
-            'https://cdn.cogoport.io/cms-prod/cogo_admin/vault/original/girl-chatting-with-friends.png',
+            'https://imagedelivery.net/xE-VtsYZUS2Y8MtLMcbXAg/4f1987bf252b95a29844/sm',
     },
     // push notifications, analytics dashboard with stats...
 ];

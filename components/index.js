@@ -6,6 +6,7 @@ import ExperienceSection from './ExperienceSection';
 import {COGOPORT_SKILLS} from '../constants/cogoport-skills';
 import SkillSection from './SkillSection';
 import ProjectSection from './ProjectSection';
+import ContactSection from './Contact';
 
 function MyProfile() {
     return (
@@ -33,6 +34,7 @@ function MyProfile() {
                         showMore={false}
                     />
                     <SkillSection />
+                    <ContactSection />
                 </View>
             </ScrollView>
         </SafeAreaView>
