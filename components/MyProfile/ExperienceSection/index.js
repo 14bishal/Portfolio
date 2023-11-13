@@ -20,6 +20,7 @@ function ExperienceSection({
     data = [],
     score = '',
     showMore = false,
+    handleDetailspage = () => {},
 }) {
     const numColumn = Math.ceil((data || []).length / 2);
 
@@ -70,7 +71,7 @@ function ExperienceSection({
                             <View style={styles.view_section}>
                                 <TouchableOpacity
                                     activeOpacity={0.4}
-                                    onPress={() => console.log('hello')}>
+                                    onPress={() => handleDetailspage()}>
                                     <View>
                                         <Text style={styles.button_name}>
                                             Details

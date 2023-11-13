@@ -14,7 +14,7 @@ import {
     PLUS_ICON,
     SOCIAL_ICONS,
     SOCIAL_NAVIGATE_MAPPING,
-} from '../../constants/social-icons';
+} from '../../../constants/social-icons';
 
 function ContactSection() {
     const [initialRegion, setInitialRegion] = useState({
