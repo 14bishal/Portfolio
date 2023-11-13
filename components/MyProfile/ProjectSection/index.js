@@ -8,9 +8,9 @@ import {
     View,
 } from 'react-native';
 import {styles} from './styles';
-import POPULAR_PROJECTS from '../../constants/projects';
+import POPULAR_PROJECTS from '../../../constants/projects';
 
-function ProjectSection() {
+function ProjectSection({handleDetailspage = () => {}}) {
     return (
         <SafeAreaView style={styles.container}>
             <ScrollView>
@@ -43,7 +43,7 @@ function ProjectSection() {
                     <View style={styles.view_more}>
                         <TouchableOpacity
                             activeOpacity={0.4}
-                            onPress={() => console.log('hello')}>
+                            onPress={() => handleDetailspage()}>
                             <View style={styles.wrap}>
                                 <Text style={styles.button_name}>See All</Text>
                                 <Image

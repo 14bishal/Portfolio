@@ -1,31 +1,30 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  //   useColorScheme,
-  View,
-} from 'react-native';
-import MyProfile from './components';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-// const isDarkMode = useColorScheme() === 'dark';
+import ExperienceDetails from './components/ExperienceDetails';
+import MyProfile from './components/MyProfile';
+
+const Stack = createNativeStackNavigator();
 
 function App(): JSX.Element {
-  return (
-    <SafeAreaView>
-      <ScrollView contentInsetAdjustmentBehavior="automatic">
-        <View>
-          <MyProfile />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
+    return (
+        <NavigationContainer>
+            <Stack.Navigator initialRouteName="Home">
+                <Stack.Screen
+                    name="MyProfile"
+                    component={MyProfile}
+                    options={{
+                        title: 'My Profile',
+                    }}
+                />
+                <Stack.Screen
+                    name="ExperienceDetails"
+                    component={ExperienceDetails}
+                />
+            </Stack.Navigator>
+        </NavigationContainer>
+    );
 }
 
 export default App;

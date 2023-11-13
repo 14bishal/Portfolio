@@ -1,7 +1,7 @@
 import {SafeAreaView, View, Text, FlatList, Image} from 'react-native';
 import React, {useEffect, useRef, useState} from 'react';
 
-import SVG_MAPPING from '../../constants/svg-mapping';
+import SVG_MAPPING from '../../../constants/svg-mapping';
 
 import {styles} from './styles';
 
