@@ -1,0 +1,36 @@
+name: Lint Check
+
+on:
+  issue_comment:
+    types: [created]
+
+jobs:
+  lint:
+    runs-on: macos-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 18
+
+    - name: Install dependencies
+      run: |
+        yarn install
+        # Add other dependencies as needed
+
+    - name: Run ESLint
+      run: npx eslint .
+      # Customize ESLint command based on your configuration
+
+    - name: Check for Commented Code
+      run: |
+        COMMENTED_CODE=$(grep -r '^.*\/\/' . || true)
+        if [ -n "$COMMENTED_CODE" ]; then
+          echo "Commented code found:"
+          echo "$COMMENTED_CODE"
+          exit 1
+        fi
