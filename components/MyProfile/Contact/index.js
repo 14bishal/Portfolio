@@ -88,18 +88,14 @@ function ContactSection() {
                 <View style={styles.zoom_section}>
                     <TouchableOpacity onPress={handleZoomIn}>
                         <Image
-                            source={{
-                                uri: PLUS_ICON,
-                            }}
+                            source={{uri: PLUS_ICON}}
                             width={35}
                             height={35}
                         />
                     </TouchableOpacity>
                     <TouchableOpacity onPress={handleZoomOut}>
                         <Image
-                            source={{
-                                uri: MINUS_ICON,
-                            }}
+                            source={{uri: MINUS_ICON}}
                             width={35}
                             height={35}
                         />

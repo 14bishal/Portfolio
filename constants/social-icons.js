@@ -35,3 +35,9 @@ export const SOCIAL_NAVIGATE_MAPPING = {
 export const PLUS_ICON = 'https://img.icons8.com/ios-glyphs/30/plus--v1.png';
 
 export const MINUS_ICON = 'https://img.icons8.com/ios-glyphs/30/minus.png';
+
+export const AVATAR_ICON =
+    'https://cdn.pixabay.com/photo/2018/08/28/13/29/avatar-3637561_1280.png';
+
+export const ARROW_ICON =
+    'https://img.icons8.com/ios-glyphs/30/long-arrow-right.png';

@@ -7,7 +7,7 @@ function ExperienceDetails() {
     return (
         <SafeAreaView>
             <ScrollView>
-                {(EXPERIENCE_PROJECT || []).map(item => {
+                {(EXPERIENCE_PROJECT || []).map((item, indx) => {
                     const {
                         label = '',
                         name = '',
@@ -18,7 +18,7 @@ function ExperienceDetails() {
 
                     return (
                         <ProjectDetails
-                            key={name}
+                            key={`${name}_${indx}`}
                             title={label}
                             skills={skills}
                             description={description}

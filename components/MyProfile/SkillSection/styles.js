@@ -9,7 +9,6 @@ export const styles = StyleSheet.create({
         justifyContent: 'space-between',
         paddingVertical: 18,
         width: width,
-        // backgroundColor: '#EDF7FA',
         backgroundColor: '#DAFCFF',
     },
     section_title: {
