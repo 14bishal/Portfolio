@@ -2,6 +2,7 @@ import {SafeAreaView, View, Text, ScrollView, Image} from 'react-native';
 import React from 'react';
 
 import {styles} from './styles';
+import {AVATAR_ICON} from '../../../constants/social-icons';
 
 function AboutSection() {
     return (
@@ -10,7 +11,7 @@ function AboutSection() {
                 <View style={styles.view_section}>
                     <View style={styles.image_section}>
                         <Image
-                            source={{uri: 'https://reactjs.org/logo-og.png'}}
+                            source={{uri: AVATAR_ICON}}
                             style={styles.avatar}
                         />
                     </View>

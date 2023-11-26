@@ -16,9 +16,7 @@ function ProjectDetails({
                     <Text style={styles.title}>{title}</Text>
                     <View style={styles.info_section}>
                         <Image
-                            source={{
-                                uri: imageUrl,
-                            }}
+                            source={{uri: imageUrl}}
                             style={styles.image_section}
                         />
                         <View style={styles.info}>

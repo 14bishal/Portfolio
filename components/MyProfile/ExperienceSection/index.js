@@ -58,10 +58,9 @@ function ExperienceSection({
                                         <View
                                             style={styles.wrapper}
                                             key={item?.name}>
-                                            <Text
-                                                style={
-                                                    styles.label
-                                                }>{`\u29BF ${item.label}`}</Text>
+                                            <Text style={styles.label}>
+                                                {`\u29BF ${item.label}`}
+                                            </Text>
                                         </View>
                                     );
                                 }}

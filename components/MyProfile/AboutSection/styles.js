@@ -1,15 +1,10 @@
 import {StyleSheet} from 'react-native';
 
-// const height = Dimensions.get('screen').height;
-
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#fff',
-        // borderColor: '#bdbd',
-        // borderWidth: 2,
         paddingBottom: 26,
         paddingHorizontal: 24,
     },
@@ -19,7 +14,6 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         paddingVertical: 60,
-        // paddingHorizontal: 80,
     },
 
     image_section: {
@@ -28,8 +22,8 @@ export const styles = StyleSheet.create({
     },
 
     avatar: {
-        width: 150,
-        height: 150,
+        width: 200,
+        height: 280,
         borderRadius: 50,
     },
 

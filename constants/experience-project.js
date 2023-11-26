@@ -54,6 +54,27 @@ const EXPERIENCE_PROJECT = [
         imageUrl:
             'https://imagedelivery.net/xE-VtsYZUS2Y8MtLMcbXAg/467db981cf2f98ca15af/sm',
     },
+    {
+        label: 'Ticketing and Support Solution',
+        name: 'ticketing_support',
+        description: [
+            {
+                label: 'Led the development of an all-in-one Ticketing and Support Solution to handle customer inquiries and internal support requests.',
+                key: 'ticketing_support_1',
+            },
+            {
+                label: 'To facilitate efficient ticket assignment and resolution.',
+                key: 'ticketing_support_2',
+            },
+            {
+                label: 'Develop a chat interface with file or media upload support for the activity of respective tickets.',
+                key: 'ticketing_support_3',
+            },
+        ],
+        skills: ['useForm', 'ReactJs'],
+        imageUrl:
+            'https://imagedelivery.net/xE-VtsYZUS2Y8MtLMcbXAg/471ba592366a19737176/sm',
+    },
 ];
 
 export default EXPERIENCE_PROJECT;

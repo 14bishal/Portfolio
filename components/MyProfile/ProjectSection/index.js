@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import {styles} from './styles';
 import POPULAR_PROJECTS from '../../../constants/projects';
+import {ARROW_ICON} from '../../../constants/social-icons';
 
 function ProjectSection({handleDetailspage = () => {}}) {
     return (
@@ -48,9 +49,7 @@ function ProjectSection({handleDetailspage = () => {}}) {
                                 <Text style={styles.button_name}>See All</Text>
                                 <Image
                                     style={styles.arrow_icon}
-                                    source={{
-                                        uri: 'https://img.icons8.com/ios-glyphs/30/long-arrow-right.png',
-                                    }}
+                                    source={{uri: ARROW_ICON}}
                                     alt="long-arrow-right"
                                 />
                             </View>

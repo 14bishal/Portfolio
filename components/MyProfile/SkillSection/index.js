@@ -42,9 +42,7 @@ function SkillSection() {
                     renderItem={({item}) => (
                         <View style={styles.card}>
                             <Image
-                                source={{
-                                    uri: item?.image,
-                                }}
+                                source={{uri: item?.image}}
                                 style={{
                                     width: item?.width,
                                     height: item?.height,

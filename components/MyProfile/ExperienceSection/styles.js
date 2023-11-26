@@ -32,7 +32,6 @@ export const styles = StyleSheet.create({
         flex: 4,
         alignContent: 'center',
         borderRadius: 15,
-        // backgroundColor: '#0077FF',
         backgroundColor: '#008BDE',
     },
 
